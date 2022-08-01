@@ -45,5 +45,9 @@ function h1() {
         document.querySelector("h1").innerHTML="player2 wins🏇"
 
     }
+    else{
+        document.querySelector("h1").innerHTML="Ahmed wins🥵"
+
+    }
 }
 h1();
