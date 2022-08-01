@@ -1,6 +1,5 @@
+var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 function leftNerd() {
-    var randomNumber1 = Math.floor(Math.random() * 6) + 1;
-
     if (randomNumber1 === 1) {
         document.querySelector(".img1").setAttribute("src", "images/dice1.png")
     } else if (randomNumber1 === 2) {
@@ -18,9 +17,8 @@ function leftNerd() {
 
 }
 leftNerd();
+var randomNumber2 = Math.floor(Math.random() * 6) + 1;
 function righttNerd() {
-    var randomNumber2 = Math.floor(Math.random() * 6) + 1;
-
     if (randomNumber2 === 1) {
         document.querySelector(".img2").setAttribute("src", "images/dice1.png")
     } else if (randomNumber2 === 2) {
@@ -42,6 +40,10 @@ righttNerd();
 function h1() {
     if (randomNumber1>randomNumber2) {
         document.querySelector("h1").innerHTML="player1 wins🏋️‍♂️"
+    }
+    else if (randomNumber1<randomNumber2) {
+        document.querySelector("h1").innerHTML="player2 wins🏇"
+
     }
 }
 h1();
